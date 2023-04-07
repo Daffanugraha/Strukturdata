@@ -11,15 +11,15 @@ public class LinkQueue {
         return list.isEmpty();
     }
 
-    public void enqueue(int data) {
+    public void enqueue(String data) {
         list.insertLast(data);
     }
 
-    public int dequeue() {
+    public String dequeue() {
         return list.deleteFirst();
     }
 
-    public int peek() {
+    public String peek() {
         return list.first.data;
     }
 

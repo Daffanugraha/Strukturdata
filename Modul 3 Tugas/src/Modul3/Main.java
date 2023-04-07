@@ -6,14 +6,14 @@ public class Main {
 
         System.out.println("Is queue empty? " + queue.isEmpty());
 
-        queue.enqueue(10);
-        queue.enqueue(20);
-        queue.enqueue(30);
+        queue.enqueue("Hello");
+        queue.enqueue("World");
+        queue.enqueue("Java");
 
         System.out.println("Queue size: " + queue.size());
         System.out.println("Queue peek: " + queue.peek());
 
-        int dequeued = queue.dequeue();
+        String dequeued = queue.dequeue();
         System.out.println("Dequeued: " + dequeued);
         System.out.println("Queue size after dequeue: " + queue.size());
 
@@ -24,3 +24,4 @@ public class Main {
         System.out.println("Is queue empty? " + queue.isEmpty());
     }
 }
+

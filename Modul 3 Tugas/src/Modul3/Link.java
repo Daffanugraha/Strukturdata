@@ -2,10 +2,10 @@ package Modul3;
 
 public class Link {
 
-        public int data;
+        public String data;
         public Link next;
 
-        public Link(int data) {
+        public Link(String data) {
             this.data = data;
             next = null;
         }
@@ -14,5 +14,7 @@ public class Link {
             System.out.print(data + " ");
         }
     }
+
+
 
 

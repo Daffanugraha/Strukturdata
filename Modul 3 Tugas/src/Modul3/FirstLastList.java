@@ -13,7 +13,7 @@ public class FirstLastList {
         return first == null;
     }
 
-    public void insertLast(int data) {
+    public void insertLast(String data) {
         Link newLink = new Link(data);
         if (isEmpty()) {
             first = newLink;
@@ -23,8 +23,8 @@ public class FirstLastList {
         last = newLink;
     }
 
-    public int deleteFirst() {
-        int temp = first.data;
+    public String deleteFirst() {
+        String temp = first.data;
         if (first.next == null) {
             last = null;
         }
@@ -38,7 +38,7 @@ public class FirstLastList {
             current.displayLink();
             current = current.next;
         }
-        System.out.println("");
+        System.out.println();
     }
 }
 
